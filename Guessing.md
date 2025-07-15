@@ -7,7 +7,7 @@ flowchart TD
     Ask --> Validate{Is input valid?}
     Validate -- No --> Error[Display error message] --> Ask
     Validate -- Yes --> Compare{Compare guess to number}
-    Compare -- Too Low --> LowMsg[Display "Too Low"] --> Ask
+    Compare -- Too Low --> LowMsg["Display Too Low"] --> Ask
     Compare -- Too High --> HighMsg[Display "Too High"] --> Ask
     Compare -- Correct --> Success[Display "Correct!"]
     Success --> End((End))
